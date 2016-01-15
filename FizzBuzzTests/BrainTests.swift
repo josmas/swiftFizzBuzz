@@ -1,6 +1,6 @@
 //
-//  FizzBuzzTests.swift
-//  FizzBuzzTests
+//  BrainTests.swift
+//  FizzBuzz
 //
 //  Created by Jose Dominguez on 15/01/2016.
 //  Copyright © 2016 Jos. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import FizzBuzz
 
-class FizzBuzzTests: XCTestCase {
+class BrainTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,16 +21,10 @@ class FizzBuzzTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testIsDivisibleByThree(){
+        let brain = Brain()
+        let result = brain.isDivisibleByThree(3);
+        XCTAssertEqual(result, true)
     }
     
 }
