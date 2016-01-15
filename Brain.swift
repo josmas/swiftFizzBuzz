@@ -33,6 +33,6 @@ class Brain: NSObject{
 
         if isDivisibleByThree(number) { return "Fizz" }
 
-        return "Something went wrong!"
+        return "\(number)"
     }
 }
