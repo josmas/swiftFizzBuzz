@@ -17,4 +17,8 @@ class Brain: NSObject{
     func isDivisibleByFive(number :Int) -> Bool {
         return number % 5 == 0
     }
+
+    func isDivisibleByFifteen(number :Int) -> Bool {
+        return isDivisibleByFive(number) && isDivisibleByFive(number)
+    }
 }
