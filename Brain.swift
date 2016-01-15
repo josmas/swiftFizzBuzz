@@ -25,4 +25,12 @@ class Brain: NSObject{
     func isDivisibleByFifteen(number :Int) -> Bool {
         return isDivisibleByThree(number) && isDivisibleByFive(number)
     }
+
+    func check(number :Int) -> String {
+        if isDivisibleByThree(number) {
+            return "Fizz"
+        }
+
+        return "Something went wrong!"
+    }
 }

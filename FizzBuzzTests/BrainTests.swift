@@ -46,4 +46,8 @@ class BrainTests: XCTestCase {
         let result2 = brain.isDivisibleByFive(51);
         XCTAssertEqual(result2, false)
     }
+
+    func testSayFizz(){
+        XCTAssertEqual(brain.check(3), "Fizz")
+    }
 }
