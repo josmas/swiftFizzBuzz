@@ -50,4 +50,12 @@ class BrainTests: XCTestCase {
     func testSayFizz(){
         XCTAssertEqual(brain.check(3), "Fizz")
     }
+
+    func testSayBuzz(){
+        XCTAssertEqual(brain.check(5), "Buzz")
+    }
+
+    func testSayFizzBuzz(){
+        XCTAssertEqual(brain.check(30), "FizzBuzz")
+    }
 }
