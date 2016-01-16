@@ -38,10 +38,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-WX-pa8">
                                         <rect key="frame" x="0.0" y="0.0" width="249.5" height="249.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETs-nW-8ax"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-vK-kgS">
                                         <rect key="frame" x="0.0" y="256" width="249.5" height="249.5"/>
@@ -102,6 +106,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="gKz-1A-euk" secondAttribute="trailing" constant="20" id="iYP-br-t0h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberButton" destination="ENg-WX-pa8" id="Ix0-ZF-uBD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
