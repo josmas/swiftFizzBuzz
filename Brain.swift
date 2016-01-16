@@ -26,13 +26,13 @@ class Brain: NSObject{
         return isDivisibleByThree(number) && isDivisibleByFive(number)
     }
 
-    func check(number: Int) -> String {
-        if isDivisibleByFifteen(number) { return "FizzBuzz" }
+    func check(number: Int) -> Move {
+        if isDivisibleByFifteen(number) { return Move.FizzBuzz }
 
-        if isDivisibleByFive(number) { return "Buzz" }
+        if isDivisibleByFive(number) { return Move.Buzz }
 
-        if isDivisibleByThree(number) { return "Fizz" }
+        if isDivisibleByThree(number) { return Move.Fizz }
 
-        return "\(number)"
+        return Move.Number
     }
 }

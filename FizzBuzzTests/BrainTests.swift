@@ -48,18 +48,18 @@ class BrainTests: XCTestCase {
     }
 
     func testSayFizz(){
-        XCTAssertEqual(brain.check(3), "Fizz")
+        XCTAssertEqual(brain.check(3), Move.Fizz)
     }
 
     func testSayBuzz(){
-        XCTAssertEqual(brain.check(5), "Buzz")
+        XCTAssertEqual(brain.check(5), Move.Buzz)
     }
 
     func testSayFizzBuzz(){
-        XCTAssertEqual(brain.check(30), "FizzBuzz")
+        XCTAssertEqual(brain.check(30), Move.FizzBuzz)
     }
 
     func testSayNumber(){
-        XCTAssertEqual(brain.check(1), "1")
+        XCTAssertEqual(brain.check(1), Move.Number)
     }
 }

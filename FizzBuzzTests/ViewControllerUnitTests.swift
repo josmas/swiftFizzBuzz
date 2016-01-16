@@ -34,17 +34,17 @@ class ViewControllerUnitTests: XCTestCase {
     }
 
     func testPlayShouldReturnIfMoveRight() {
-        let response = game.play("1")
+        let response = game.play(Move.Number)
         XCTAssertNotNil(response.right)
     }
 
     func testPlayShouldReturnNewScore() {
-        let response = game.play("1")
+        let response = game.play(Move.Number)
         XCTAssertNotNil(response.score)
     }
 
     func testOnWrongMoveScoreNotIncremented() {
-        viewController.play("Fizz")
+        viewController.play(Move.Fizz)
         let newScore = viewController.gameScore
         XCTAssertEqual(newScore, 0)
     }
