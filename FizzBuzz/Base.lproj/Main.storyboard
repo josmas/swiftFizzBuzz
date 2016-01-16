@@ -34,11 +34,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xq5-9z-dg5">
-                                <rect key="frame" x="40" y="40" width="520" height="520"/>
+                                <rect key="frame" x="40" y="40.5" width="520" height="519.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-WX-pa8">
-                                        <rect key="frame" x="0.0" y="0.0" width="249.5" height="249.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="234" height="233.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="numberButton"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="height" multiplier="1:1" id="I0v-Id-8Gs"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                         <state key="normal" title="0" backgroundImage="button_border">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,28 +50,8 @@
                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ETs-nW-8ax"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnQ-49-TTI">
-                                        <rect key="frame" x="262" y="257" width="249.5" height="249.5"/>
-                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
-                                        <state key="normal" image="space" backgroundImage="button_border">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2E-zJ-V6j"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJM-wL-ooK">
-                                        <rect key="frame" x="262" y="-2" width="249.5" height="249.5"/>
-                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
-                                        <state key="normal" image="champagne" backgroundImage="button_border">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyZ-uM-L84"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-vK-kgS">
-                                        <rect key="frame" x="0.0" y="256" width="249.5" height="249.5"/>
+                                        <rect key="frame" x="0.0" y="271" width="234" height="234"/>
                                         <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <state key="normal" image="lightning" backgroundImage="button_border">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -77,35 +60,55 @@
                                             <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEG-O2-yEd"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJM-wL-ooK">
+                                        <rect key="frame" x="277.5" y="-2" width="234" height="233.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
+                                        <state key="normal" image="champagne" backgroundImage="button_border">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yyZ-uM-L84"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnQ-49-TTI">
+                                        <rect key="frame" x="278" y="271" width="234" height="234"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
+                                        <state key="normal" image="space" backgroundImage="button_border">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n2E-zJ-V6j"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83529411760000005" green="0.2666666667" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="top" secondItem="xq5-9z-dg5" secondAttribute="top" id="02c-sB-iDz"/>
-                                    <constraint firstAttribute="trailing" secondItem="kJM-wL-ooK" secondAttribute="trailing" constant="8" id="1P4-Fj-WHa"/>
-                                    <constraint firstItem="dnQ-49-TTI" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="4QD-wP-L2q"/>
-                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="6Hw-EC-VO5"/>
-                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="6fo-8T-zrv"/>
-                                    <constraint firstItem="kJM-wL-ooK" firstAttribute="top" secondItem="xq5-9z-dg5" secondAttribute="top" constant="-2" id="6gF-AM-cJM"/>
-                                    <constraint firstAttribute="trailing" secondItem="dnQ-49-TTI" secondAttribute="trailing" constant="8.5" id="Bgp-Fv-YMb"/>
-                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="Dzn-ki-VFM"/>
-                                    <constraint firstItem="dnQ-49-TTI" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="KVK-T9-QDw"/>
-                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="Phn-Vl-Sjd"/>
+                                    <constraint firstItem="kJM-wL-ooK" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="4nN-XC-lKY"/>
+                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="6UY-0Y-XHy"/>
+                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="top" secondItem="xq5-9z-dg5" secondAttribute="top" id="DgH-VI-Ck3"/>
+                                    <constraint firstItem="dnQ-49-TTI" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="KTn-P6-rjl"/>
+                                    <constraint firstItem="kJM-wL-ooK" firstAttribute="top" secondItem="xq5-9z-dg5" secondAttribute="top" constant="-2" id="Q4U-Yz-qwh"/>
+                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="leading" secondItem="xq5-9z-dg5" secondAttribute="leading" id="QP4-us-ou7"/>
+                                    <constraint firstAttribute="bottom" secondItem="ejS-vK-kgS" secondAttribute="bottom" constant="14" id="RDs-f9-kR2"/>
                                     <constraint firstAttribute="width" secondItem="xq5-9z-dg5" secondAttribute="height" multiplier="1:1" id="SMs-15-Vxt"/>
-                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="U5Z-zV-0fI"/>
-                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="Vex-Dq-hE5"/>
-                                    <constraint firstItem="dnQ-49-TTI" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="bF3-7r-4ou"/>
-                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="height" secondItem="xq5-9z-dg5" secondAttribute="height" multiplier="0.48" id="bxl-YG-Koe"/>
-                                    <constraint firstItem="dnQ-49-TTI" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="fRm-MJ-KvB"/>
-                                    <constraint firstAttribute="bottom" secondItem="dnQ-49-TTI" secondAttribute="bottom" constant="13.5" id="gBR-Kt-C6a"/>
-                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="width" secondItem="xq5-9z-dg5" secondAttribute="width" multiplier="0.48" id="iwm-AI-g4k"/>
-                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="leading" secondItem="xq5-9z-dg5" secondAttribute="leading" id="lEd-ol-fPL"/>
-                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="leading" secondItem="xq5-9z-dg5" secondAttribute="leading" id="lnH-Di-FyP"/>
-                                    <constraint firstItem="kJM-wL-ooK" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="nyW-LJ-T23"/>
-                                    <constraint firstAttribute="bottom" secondItem="ejS-vK-kgS" secondAttribute="bottom" constant="14.5" id="oMS-4a-Wdt"/>
-                                    <constraint firstItem="kJM-wL-ooK" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="opn-lf-Kti"/>
-                                    <constraint firstItem="kJM-wL-ooK" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="rvy-ZC-d9t"/>
-                                    <constraint firstItem="kJM-wL-ooK" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="zJj-pv-juC"/>
+                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="height" secondItem="xq5-9z-dg5" secondAttribute="height" multiplier="0.45" id="Z3q-83-1TN"/>
+                                    <constraint firstAttribute="trailing" secondItem="dnQ-49-TTI" secondAttribute="trailing" constant="8.5" id="a6t-cR-xaB"/>
+                                    <constraint firstItem="kJM-wL-ooK" firstAttribute="height" secondItem="ENg-WX-pa8" secondAttribute="height" id="aPK-mJ-018"/>
+                                    <constraint firstItem="dnQ-49-TTI" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="fSk-o2-cPN"/>
+                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="top" secondItem="xq5-9z-dg5" secondAttribute="top" id="fpV-dM-K4x"/>
+                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="width" secondItem="ENg-WX-pa8" secondAttribute="width" id="gwj-vC-LaS"/>
+                                    <constraint firstItem="ejS-vK-kgS" firstAttribute="leading" secondItem="xq5-9z-dg5" secondAttribute="leading" id="hNw-Aq-Eeg"/>
+                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="leading" secondItem="xq5-9z-dg5" secondAttribute="leading" id="mER-2Z-eOs"/>
+                                    <constraint firstAttribute="bottom" secondItem="dnQ-49-TTI" secondAttribute="bottom" constant="14" id="qSs-C8-o2i"/>
+                                    <constraint firstItem="ENg-WX-pa8" firstAttribute="width" secondItem="xq5-9z-dg5" secondAttribute="width" multiplier="0.45" id="qX3-av-1PU"/>
+                                    <constraint firstAttribute="trailing" secondItem="kJM-wL-ooK" secondAttribute="trailing" constant="8.5" id="szl-ed-iIy"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fpV-dM-K4x"/>
+                                        <exclude reference="mER-2Z-eOs"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.83529411764705885" green="0.26666666666666666" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
