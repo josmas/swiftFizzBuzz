@@ -17,6 +17,7 @@
 		80D643051C498AF700F03E9E /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D643041C498AF700F03E9E /* Brain.swift */; };
 		80D643091C4999C900F03E9E /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D643081C4999C900F03E9E /* GameTests.swift */; };
 		80D6430B1C499A3200F03E9E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6430A1C499A3200F03E9E /* Game.swift */; };
+		80FF569B1C4A79F5008C0273 /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80FF569A1C4A79F5008C0273 /* ViewControllerUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		80D643041C498AF700F03E9E /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Brain.swift; path = ../Brain.swift; sourceTree = "<group>"; };
 		80D643081C4999C900F03E9E /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		80D6430A1C499A3200F03E9E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		80FF569A1C4A79F5008C0273 /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				80D643021C4989DB00F03E9E /* BrainTests.swift */,
 				80D642EB1C49883600F03E9E /* Info.plist */,
 				80D643081C4999C900F03E9E /* GameTests.swift */,
+				80FF569A1C4A79F5008C0273 /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				80D643031C4989DB00F03E9E /* BrainTests.swift in Sources */,
 				80D643091C4999C900F03E9E /* GameTests.swift in Sources */,
+				80FF569B1C4A79F5008C0273 /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
