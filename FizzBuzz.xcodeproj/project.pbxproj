@@ -103,13 +103,13 @@
 		80D642D31C49883600F03E9E /* FizzBuzz */ = {
 			isa = PBXGroup;
 			children = (
-				80D643041C498AF700F03E9E /* Brain.swift */,
 				80D642D41C49883600F03E9E /* AppDelegate.swift */,
 				80D642D61C49883600F03E9E /* ViewController.swift */,
 				80D642D81C49883600F03E9E /* Main.storyboard */,
 				80D642DB1C49883600F03E9E /* Assets.xcassets */,
 				80D642DD1C49883600F03E9E /* LaunchScreen.storyboard */,
 				80D642E01C49883600F03E9E /* Info.plist */,
+				80D643041C498AF700F03E9E /* Brain.swift */,
 				80D6430A1C499A3200F03E9E /* Game.swift */,
 			);
 			path = FizzBuzz;
@@ -499,6 +499,7 @@
 				80D642FB1C49883600F03E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D642FC1C49883600F03E9E /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +508,7 @@
 				80D642FE1C49883600F03E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D642FF1C49883600F03E9E /* Build configuration list for PBXNativeTarget "FizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +517,7 @@
 				80D643011C49883600F03E9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
