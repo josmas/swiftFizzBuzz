@@ -20,21 +20,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgA-wg-Oea">
-                                <rect key="frame" x="475" y="550" width="105" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgA-wg-Oea">
+                                <rect key="frame" x="485" y="544" width="95" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="3 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKz-1A-euk">
-                                <rect key="frame" x="538" y="20" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKz-1A-euk">
+                                <rect key="frame" x="545" y="40" width="35" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xq5-9z-dg5">
-                                <rect key="frame" x="40" y="40.5" width="520" height="519.5"/>
+                                <rect key="frame" x="40" y="40" width="520" height="519.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENg-WX-pa8">
                                         <rect key="frame" x="0.0" y="0.0" width="234" height="233.5"/>
@@ -61,7 +61,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJM-wL-ooK">
-                                        <rect key="frame" x="277.5" y="-2" width="234" height="233.5"/>
+                                        <rect key="frame" x="277" y="-2" width="234" height="233.5"/>
                                         <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                         <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -114,11 +114,12 @@
                         <color key="backgroundColor" red="0.83529411764705885" green="0.26666666666666666" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xq5-9z-dg5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5sp-lL-pcK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sgA-wg-Oea" secondAttribute="trailing" constant="20" id="SeT-Y8-ygL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gKz-1A-euk" secondAttribute="trailing" id="BW8-gT-Vlx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sgA-wg-Oea" secondAttribute="trailing" id="SeT-Y8-ygL"/>
                             <constraint firstItem="xq5-9z-dg5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="YBf-P9-hAY"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sgA-wg-Oea" secondAttribute="bottom" constant="20" id="atz-Td-il3"/>
                             <constraint firstItem="xq5-9z-dg5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eoV-PF-RMW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gKz-1A-euk" secondAttribute="trailing" constant="20" id="iYP-br-t0h"/>
+                            <constraint firstItem="gKz-1A-euk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="zOP-75-cMg"/>
                         </constraints>
                     </view>
                     <connections>
