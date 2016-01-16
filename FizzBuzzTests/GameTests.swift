@@ -59,4 +59,10 @@ class GameTests: XCTestCase {
         let result = response.right
         XCTAssertEqual(result, true)
     }
+
+    func testResetGame(){
+        game.score = 14
+        game.reset()
+        XCTAssertTrue(game.score == 0)
+    }
 }

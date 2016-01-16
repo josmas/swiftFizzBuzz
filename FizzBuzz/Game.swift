@@ -28,4 +28,8 @@ class Game: NSObject {
             return (false, score)
         }
     }
+
+    func reset(){
+        score = 0
+    }
 }

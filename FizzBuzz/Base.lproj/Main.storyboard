@@ -22,10 +22,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgA-wg-Oea">
                                 <rect key="frame" x="485" y="544" width="95" height="36"/>
+                                <accessibility key="accessibilityConfiguration" identifier="playAgain"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Play Again">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I78-Bz-A4N"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 / 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKz-1A-euk">
                                 <rect key="frame" x="545" y="40" width="35" height="20.5"/>
@@ -127,6 +131,7 @@
                         <outlet property="fizzButton" destination="kJM-wL-ooK" id="cJM-Ol-lRY"/>
                         <outlet property="fizzBuzzButton" destination="dnQ-49-TTI" id="2Pe-dx-VqX"/>
                         <outlet property="numberButton" destination="ENg-WX-pa8" id="Ix0-ZF-uBD"/>
+                        <outlet property="playAgain" destination="sgA-wg-Oea" id="NtB-Zq-pd2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

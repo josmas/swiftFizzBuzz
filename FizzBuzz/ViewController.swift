@@ -25,16 +25,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var fizzButton: UIButton!
     @IBOutlet weak var buzzButton: UIButton!
     @IBOutlet weak var fizzBuzzButton: UIButton!
+    @IBOutlet weak var playAgain: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Game()
-        
+
         guard let checkedGame = game else {
             print("Game is nil")
             return
         }
-        
+
         gameScore = checkedGame.score
     }
 
@@ -54,6 +55,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(sender: UIButton) {
+        guard let unwrappedGame = game else {
+            print("Game is nil!")
+            return
+        }
+
+        guard let checkedGame = game else {
+            print("Game is nil")
+            return
+        }
+
         switch sender {
         case numberButton:
             play(Move.Number)
@@ -63,6 +74,9 @@ class ViewController: UIViewController {
             play(Move.Buzz)
         case fizzBuzzButton:
             play(Move.FizzBuzz)
+        case playAgain:
+            unwrappedGame.reset()
+            gameScore = checkedGame.score
         default:
             print("Invalid selection")
         }
